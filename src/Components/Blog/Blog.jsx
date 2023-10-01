@@ -1,5 +1,5 @@
 import profile from '../../assets/images/profile.png'
-const Blog = ({blog}) => {
+const Blog = ({blog,handleClick}) => {
 
   const { cover, title, author, posted_date, reading_time, hashtags} = blog;
 
@@ -17,7 +17,7 @@ const Blog = ({blog}) => {
 
         <div className="flex gap-3 justify-center items-center text-gray-600">
           <p>{reading_time} min read</p>
-          <button>Bookmark</button>
+          <button onClick={()=>handleClick(blog)}>Bookmark</button>
         </div>
       </div>
       <h3 className="text-3xl font-bold text-[#111]">{title}</h3>
