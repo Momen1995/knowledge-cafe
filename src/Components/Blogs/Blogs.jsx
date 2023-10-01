@@ -11,7 +11,7 @@ const Blogs = ({handleClick}) => {
     .then(data=> setBlogs(data))
   },[])
   return (
-    <div className='w-9/12 bg-gray-100 p-2'>
+    <div className=' w-full  lg:w-9/12  bg-gray-100 p-2'>
       
       <div>
         {

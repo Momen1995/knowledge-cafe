@@ -15,7 +15,7 @@ const Blog = ({blog,handleClick}) => {
           </div>
         </div>
 
-        <div className="flex gap-3 justify-center items-center text-gray-600">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-3 justify-center items-center text-gray-600">
           <p>{reading_time} min read</p>
           <button onClick={()=>handleClick(blog)}>Bookmark</button>
         </div>
@@ -26,6 +26,7 @@ const Blog = ({blog,handleClick}) => {
           hashtags.map((hash,idx) => <span key={idx}> <a href="#"> #{hash} </a></span>)
         }
       </p>
+      <button className='mt-3 bg-slate-500 px-4 py-2 text-[18px] text-[#fff] rounded'>Mars as read</button>
     </div>
   );
 };
